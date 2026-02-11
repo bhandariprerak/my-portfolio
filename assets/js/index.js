@@ -44,7 +44,11 @@ revealEls.forEach((el, index) => {
 });
 
 const navLinks = document.querySelectorAll(".site-nav a");
-const sections = [...navLinks]
+const sectionLinks = [...navLinks].filter((link) => {
+  const href = link.getAttribute("href") || "";
+  return href.startsWith("#");
+});
+const sections = sectionLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
 
@@ -55,7 +59,7 @@ const navObserver = new IntersectionObserver(
         return;
       }
 
-      navLinks.forEach((link) => {
+      sectionLinks.forEach((link) => {
         const isActive = link.getAttribute("href") === `#${entry.target.id}`;
         link.classList.toggle("active", isActive);
       });
