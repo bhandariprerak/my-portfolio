@@ -1,145 +1,139 @@
+const roles = [
+  "Graduate Student Developer at NCSU Expertiza",
+  "Software Engineer with high-scale backend experience",
+  "Builder of distributed APIs and AI-enabled products"
+];
 
+const roleEl = document.getElementById("role-rotator");
+let roleIdx = 0;
 
-!(function($) {
-  "use strict";
-
-  // Nav Menu
-  $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var hash = this.hash;
-      var target = $(hash);
-      if (target.length) {
-        e.preventDefault();
-
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-          
-          $(this).closest('li').addClass('active');
-        }
-
-        if (hash == '#header') {
-          $('#header').removeClass('header-top');
-          $("section").removeClass('section-show');
-          return;
-        }
-
-        if (!$('#header').hasClass('header-top')) {
-          $('#header').addClass('header-top');
-          setTimeout(function() {
-            $("section").removeClass('section-show');
-            $(hash).addClass('section-show');
-          }, 350);
-        } else {
-          $("section").removeClass('section-show');
-          $(hash).addClass('section-show');
-        }
-
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
-
-        return false;
-
-      }
-    }
-  });
-
-  // Activate/show sections on load with hash links
-  if (window.location.hash) {
-    var initial_nav = window.location.hash;
-    if ($(initial_nav).length) {
-      $('#header').addClass('header-top');
-      $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-      $('.nav-menu, .mobile-nav').find('a[href="' + initial_nav + '"]').parent('li').addClass('active');
-      setTimeout(function() {
-        $("section").removeClass('section-show');
-        $(initial_nav).addClass('section-show');
-      }, 350);
-    }
+function rotateRole() {
+  if (!roleEl) {
+    return;
   }
 
-  // Mobile Navigation
-  if ($('.nav-menu').length) {
-    var $mobile_nav = $('.nav-menu').clone().prop({
-      class: 'mobile-nav d-lg-none'
-    });
-    $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
-    $('body').append('<div class="mobile-nav-overly"></div>');
+  roleEl.style.opacity = "0";
+  setTimeout(() => {
+    roleIdx = (roleIdx + 1) % roles.length;
+    roleEl.textContent = roles[roleIdx];
+    roleEl.style.opacity = "1";
+  }, 220);
+}
 
-    $(document).on('click', '.mobile-nav-toggle', function(e) {
-      $('body').toggleClass('mobile-nav-active');
-      $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-      $('.mobile-nav-overly').toggle();
-    });
+setInterval(rotateRole, 2800);
 
-    $(document).click(function(e) {
-      var container = $(".mobile-nav, .mobile-nav-toggle");
-      if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
+const revealEls = document.querySelectorAll(".reveal");
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        revealObserver.unobserve(entry.target);
       }
     });
-  } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
-    $(".mobile-nav, .mobile-nav-toggle").hide();
+  },
+  {
+    threshold: 0.18,
+    rootMargin: "0px 0px -40px 0px"
   }
+);
 
-  // jQuery counterUp
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
+revealEls.forEach((el, index) => {
+  el.style.transitionDelay = `${Math.min(index % 6, 5) * 45}ms`;
+  revealObserver.observe(el);
+});
 
-  // // Skills section
-  // document.querySelectorAll('.skill-item').forEach((item) => {
-  //   item.addEventListener('click', (e) => {
-  //     const ripple = document.createElement('span');
-  //     ripple.className = 'ripple';
-  //     ripple.style.left = `${e.clientX - item.offsetLeft}px`;
-  //     ripple.style.top = `${e.clientY - item.offsetTop}px`;
-  //     item.appendChild(ripple);
-  
-  //     setTimeout(() => {
-  //       ripple.remove();
-  //     }, 600);
-  //   });
-  // });
-  
-  // // Add smooth fade-in animations when the section appears
-  // window.addEventListener('scroll', () => {
-  //   const skillSection = document.querySelector('.skills-section');
-  //   const rect = skillSection.getBoundingClientRect();
-  //   if (rect.top < window.innerHeight) {
-  //     skillSection.classList.add('fade-in');
-  //   }
-  // });
+const navLinks = document.querySelectorAll(".site-nav a");
+const sections = [...navLinks]
+  .map((link) => document.querySelector(link.getAttribute("href")))
+  .filter(Boolean);
 
-  // Porfolio isotope and filter
-  $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
-      itemSelector: '.portfolio-item',
-      layoutMode: 'fitRows'
-    });
+const navObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
 
-    $('#portfolio-flters li').on('click', function() {
-      $("#portfolio-flters li").removeClass('filter-active');
-      $(this).addClass('filter-active');
-
-      portfolioIsotope.isotope({
-        filter: $(this).data('filter')
+      navLinks.forEach((link) => {
+        const isActive = link.getAttribute("href") === `#${entry.target.id}`;
+        link.classList.toggle("active", isActive);
       });
     });
+  },
+  {
+    threshold: 0.35,
+    rootMargin: "-20% 0px -55% 0px"
+  }
+);
 
+sections.forEach((section) => navObserver.observe(section));
+
+const menuToggle = document.querySelector(".menu-toggle");
+const header = document.querySelector(".site-header");
+
+if (menuToggle && header) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = header.classList.toggle("menu-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  // Initiate venobox (lightbox feature used in portofilo)
-  $(document).ready(function() {
-    $('.venobox').venobox();
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      header.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
   });
+}
 
-})(jQuery);
+const countEls = document.querySelectorAll(".count");
+let counted = false;
+
+function animateCounter(el) {
+  const raw = el.dataset.count || "0";
+  const target = Number.parseFloat(raw);
+  const duration = 1200;
+  const start = performance.now();
+
+  function frame(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const value = target * progress;
+
+    if (Number.isInteger(target)) {
+      el.textContent = Math.floor(value).toLocaleString("en-US");
+    } else {
+      el.textContent = value.toFixed(1);
+    }
+
+    if (progress < 1) {
+      requestAnimationFrame(frame);
+    } else {
+      el.textContent = Number.isInteger(target) ? target.toLocaleString("en-US") : target.toFixed(1);
+    }
+  }
+
+  requestAnimationFrame(frame);
+}
+
+const impactSection = document.getElementById("impact");
+if (impactSection) {
+  const countObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !counted) {
+          counted = true;
+          countEls.forEach((el) => animateCounter(el));
+          countObserver.disconnect();
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  countObserver.observe(impactSection);
+}
+
+const yearEl = document.getElementById("year");
+if (yearEl) {
+  yearEl.textContent = String(new Date().getFullYear());
+}

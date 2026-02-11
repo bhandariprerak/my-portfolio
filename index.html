@@ -1,831 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Google Tag Manager -->
-  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BB8W2X');</script> -->
-  <!-- End Google Tag Manager -->
-  <link rel="icon" type="image/png" href="/favicon.png" />
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Personal Website</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prerak Bhandari - Software Engineer portfolio featuring experience, projects, certifications, and publication.">
+  <title>Prerak Bhandari | Software Engineer</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet">
   <link href="assets/css/styles.css" rel="stylesheet">
-
 </head>
-
 <body>
+  <div class="ambient-bg" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+    <span class="grid-overlay"></span>
+  </div>
 
+  <header class="site-header" id="home">
+    <a class="brand" href="#home">Prerak Bhandari</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="site-nav" class="site-nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <header id="header" class="header-tops">
-    <div class="container">
-      <h1><a href="index.html">Prerak Bhandari</a></h1>
-      <h2 style="color:#fff">I'm <span class="typing" style="color:#ccd612"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header"> <span>Home</span></a></li>
-          <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#skill-set"> <span>Skills</span></a></li>
-          <li><a href="#education"> <span>Education & Certifications</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
-          <!-- <li><a href="#portfolio"> <span>Projects</span></a></li> -->
-          <li><a href="https://drive.google.com/file/d/1LTTx-69XPizmvzNiZS1gDeuNqmAQ-YL9/view?usp=sharing"
-              target="_blank"> <span>Resume</span></a></li>
-          <li><a href="#contacts"> <span>Contact</span></a></li>
-        </ul>
-
-      </nav>
-
-      <!-- Social accounts -->
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/prerak-bhandari/" target="_blank" class="linkedin"><i
-            class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/bhandariprerak" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="mailto:pbhanda4@ncsu.edu" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-        <!-- <a href="https://www.youtube.com/c/ZaidAly1/videos" target="_blank" class="google"><i class="bx bxl-youtube"></i></a> -->
-      </div>
-    </div>
-    <!-- </div> -->
-
-  </header><!-- End Header -->
-
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-      <div class="section-title">
-        <h2>About</h2>
-      </div>
-
-      <div class="profile-section container">
-        <div class="row">
-          <!-- Profile Image -->
-          <div class="col-lg-4 profile-image" data-aos="fade-right">
-            <img src="assets/img/myphoto.jpg" class="img-fluid profile-img" alt="Prerak Bhandari">
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Software Engineer | Raleigh, NC</p>
+          <h1>Building high-throughput systems and product experiences that scale.</h1>
+          <p class="hero-subtitle">
+            <span id="role-rotator">Graduate Student Developer at NCSU</span>
+          </p>
+          <p class="hero-text">
+            M.S. Computer Science candidate at North Carolina State University with hands-on experience across distributed APIs,
+            messaging systems, and full-stack product delivery.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:pbhanda4@ncsu.edu">Email Me</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/prerak-bhandari/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn-secondary" href="https://github.com/bhandariprerak" target="_blank" rel="noreferrer">GitHub</a>
           </div>
-
-          <!-- Profile Content -->
-          <div class="col-lg-8 pt-4 pt-lg-0 profile-content" data-aos="fade-left">
-            <p class="profile-description">
-              Hi, I’m Prerak Bhandari, a passionate and results-driven Software Developer with over two years of
-              professional experience in designing and implementing scalable, efficient, and impactful software
-              solutions. I specialize in programming languages like Python, Go, and PHP, with a strong focus on
-              problem-solving, system optimization, and delivering robust, user-centric applications.
-
-              <br><br>Throughout my career, I’ve developed innovative features such as URL shorteners, WhatsApp
-              integrations, and scalable SMS campaigns, which have significantly improved user engagement and
-              operational efficiency. I’ve also played a key role in migrating monolithic systems to microservice
-              architectures, reducing latency by 97.5% and scaling service load from 4k to 15k requests per second. My
-              work has not only enhanced system reliability but also delivered measurable business outcomes, such as a
-              25% increase in user engagement and a 40% reduction in message delivery failures.
-
-              <br><br>My technical expertise spans cloud platforms (AWS), containerization tools like Kubernetes and
-              Docker, and database management systems such as MongoDB and MySQL. I’m also proficient in building REST
-              APIs, optimizing database queries, and implementing failover systems to ensure 99.9% message delivery
-              reliability.
-
-              <br><br>Beyond coding, I bring a creative and detail-oriented approach to my work, influenced by my
-              passion for calligraphy and a deep appreciation for elegant design. I thrive on continuous learning and
-              actively explore emerging technologies to stay at the forefront of the industry. I also enjoy teaching and
-              mentoring, whether it’s guiding students as a Teaching Assistant at NCSU or collaborating with colleagues
-              to solve complex challenges.
-
-              <br><br>I’m committed to leveraging technology to create meaningful, real-world impact and am always eager
-              to collaborate with like-minded professionals to build innovative solutions.
-
-              <br><br>I'm currently looking for an Internship as a Software Developer for Summer 2025. Kindly reach out
-              to me if you have any opportunity for me.
-            </p>
-
-            <!-- Contact Information -->
-            <div class="row">
-              <!-- Location -->
-              <div class="col-lg-6">
-                <ul class="contact-info">
-                  <li><i class="ri-map-pin-user-fill"></i> <strong>City:</strong> Raleigh, North Carolina</li>
-                </ul>
-              </div>
-
-              <!-- Email -->
-              <div class="col-lg-6">
-                <ul class="contact-info">
-                  <li><i class="ri-mail-open-fill"></i> <strong>Email:</strong> bhandariprerak@gmail.com</li>
-                  <li><i class="ri-mail-open-fill"></i> <strong>Email:</strong> pbhanda4@ncsu.edu</li>
-                </ul>
-              </div>
-            </div>
+        </div>
+        <div class="hero-card reveal">
+          <img src="assets/img/myphoto.jpg" alt="Prerak Bhandari portrait">
+          <div class="hero-card-content">
+            <p class="hero-card-title">Tech Stack Focus</p>
+            <p>Go, TypeScript, Java, Python, React, Node.js, Ruby on Rails, PostgreSQL, AWS, Kubernetes</p>
           </div>
         </div>
       </div>
+    </section>
 
-    </div>
-    <!-- End About Me -->
-
-    <!-- ======= Interests ======= -->
-    <!-- Link for icons -->
-    <!-- https://coderthemes.com/minton/layouts/default/icons-remix.html -->
-
-    <div class="interests container">
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-code-line" style="color: #ffbb2c;"></i>
-            <h3>Software Development</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-cloud-line" style="color: #47aeff;"></i>
-            <h3>Cloud Computing</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #e80368;"></i>
-            <h3>Database Optimization</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-share-box-line" style="color: #1c7d32;"></i>
-            <h3>API Development</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-message-2-line" style="color: #28a745;"></i>
-            <h3>Messaging Systems</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-links-line" style="color: #f1081f;"></i>
-            <h3>URL Shorteners</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-lightbulb-flash-line" style="color: #5578ff;"></i>
-            <h3>Problem Solving</h3>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-server-line" style="color: #11dbcf;"></i> <!-- Icon for Backend Development -->
-            <h3>Backend Development</h3>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Interests -->
-  </section><!-- End About Section -->
-
-
-  <!-- Education Section Starts -->
-  <section id="education" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Education</h2>
-      </div>
-      <div class="education-section">
-        <div class="education-container">
-          <div class="education-item" data-aos="fade-up" style="display: inline-block;">
-            <div class="institution-box" data-aos="fade-up" data-aos-delay="100">
-              <img src=".\assets\img\education\ncsu_logo.jpg" class="institution-logo" alt="NCSU">
-              <h4 class="institution-name"><a href="https://www.ncsu.edu/" target="_blank"
-                  class="institution-link">North Carolina State University, Raleigh, NC</a></h4>
-              <p class="degree"><em>Masters in Computer Science</em></p>
-              <h5 class="duration">2024 - 2026</h5>
-            </div>
-          </div>
-
-          <div class="education-item" data-aos="fade-up" style="display: inline-block;">
-            <div class="institution-box" data-aos="fade-up" data-aos-delay="100">
-              <img src=".\assets\img\education\RNSIT.jpg" class="institution-logo" alt="RNS Institute of Technology">
-              <h4 class="institution-name"><a href="https://www.rnsit.ac.in/" target="_blank"
-                  class="institution-link">RNS Institute of Technology, Bangalore, India</a></h4>
-              <p class="degree"><em>BE in Computer Science and Engineering</em></p>
-              <h5 class="duration">2018 - 2022</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Certification Area Starts Here -->
-    <div class="portfolio">
+    <section class="section" id="about">
       <div class="container">
-        <div class="section-title">
-          <h2>Certifications</h2>
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Engineer with product mindset and systems depth</h2>
         </div>
-
-        <!-- Certification Section -->
-        <div class="certificates-container">
-          <!-- Certificate 1 Python Specialization -->
-          <div class="certificate-item">
-            <div class="certificate-wrap">
-              <img src=".\assets\img\certification\PythonSpecialization.jpeg" class="img-fluid"
-                alt="Python Specialization">
-              <div class="certificate-info">
-                <h6>University of Michigan: Python Specialization</h6>
-                <div class="certificate-links">
-                  <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/KWLN65FWNXG9"
-                    target="_blank" class="certificate-link">
-                    <i class="bx bx-link">View Certificate</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 2 AWS – Addressing Security Risk -->
-          <div class="certificate-item">
-            <div class="certificate-wrap">
-              <img src=".\assets\img\certification\aws-fundamentals-addressing-security-risk.jpeg" class="img-fluid"
-                alt="AWS – Addressing Security Risk">
-              <div class="certificate-info">
-                <h6>AWS – Addressing Security Risk</h6>
-                <div class="certificate-links">
-                  <a href="https://coursera.org/verify/ZAHYV2JMLU6K" target="_blank" class="certificate-link">
-                    <i class="bx bx-link">View Certificate</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 3 AWS – Cloud Technical Essentials -->
-          <div class="certificate-item">
-            <div class="certificate-wrap">
-              <img src=".\assets\img\certification\awsCTE.jpeg" class="img-fluid"
-                alt="AWS – Cloud Technical Essentials">
-              <div class="certificate-info">
-                <h6>AWS – Cloud Technical Essentials</h6>
-                <div class="certificate-links">
-                  <a href="https://coursera.org/verify/T4FQHA3N3H6H" target="_blank" class="certificate-link">
-                    <i class="bx bx-link">View Certificate</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 4 AWS – S3 -->
-          <div class="certificate-item">
-            <div class="certificate-wrap">
-              <img src=".\assets\img\certification\awsS3.jpeg" class="img-fluid" alt="AWS – S3">
-              <div class="certificate-info">
-                <h6>AWS – S3</h6>
-                <div class="certificate-links">
-                  <a href="https://coursera.org/verify/67QS3E6XFL9D" target="_blank" class="certificate-link">
-                    <i class="bx bx-link">View Certificate</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 5 Go -->
-          <div class="certificate-item">
-            <div class="certificate-wrap">
-              <img src=".\assets\img\certification\go.jpeg" class="img-fluid" alt="Getting started with Go">
-              <div class="certificate-info">
-                <h6>Getting started with Go</h6>
-                <div class="certificate-links">
-                  <a href="https://coursera.org/verify/SXAZ2N5MF9FJ" target="_blank" class="certificate-link">
-                    <i class="bx bx-link">View Certificate</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 6 Data Structures -->
-          <div class="certificate-item">
-            <div class="certificate-wrap">
-              <img src=".\assets\img\certification\dsa.jpeg" class="img-fluid" alt="Data Structures">
-              <div class="certificate-info">
-                <h6>Data Structures</h6>
-                <div class="certificate-links">
-                  <a href="https://coursera.org/verify/P6HEH25TYT5S" target="_blank" class="certificate-link">
-                    <i class="bx bx-link">View Certificate</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 7 OOP in Java -->
-          <div class="certificate-item">
-            <div class="certificate-wrap">
-              <img src=".\assets\img\certification\ood.jpeg" class="img-fluid"
-                alt="Object Oriented Programming in Java">
-              <div class="certificate-info">
-                <h6>Object Oriented Programming in Java</h6>
-                <div class="certificate-links">
-                  <a href="https://coursera.org/verify/9DG8TA4BX88U" target="_blank" class="certificate-link">
-                    <i class="bx bx-link">View Certificate</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 8 Honors in HTML, CSS, & JS -->
-          <div class="certificate-item">
-            <div class="certificate-wrap">
-              <img src=".\assets\img\certification\htmlCssJs.jpeg" class="img-fluid"
-                alt="Programming Foundations with JavaScript, HTML and CSS">
-              <div class="certificate-info">
-                <h6>Programming Foundations with JavaScript, HTML and CSS</h6>
-                <div class="certificate-links">
-                  <a href="https://coursera.org/verify/Y5ENNX2TCR5L" target="_blank" class="certificate-link">
-                    <i class="bx bx-link">View Certificate</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 9 Rust Fundamentals -->
-          <div class="certificate-item">
-            <div class="certificate-wrap">
-              <img src=".\assets\img\certification\rust.jpeg" class="img-fluid" alt="Rust Fundamentals">
-              <div class="certificate-info">
-                <h6>Rust Fundamentals</h6>
-                <div class="certificate-links">
-                  <a href="https://coursera.org/verify/PYPQ8O0276B5" target="_blank" class="certificate-link">
-                    <i class="bx bx-link">View Certificate</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Certificate 10 Deep Learning -->
-          <div class="certificate-item">
-            <div class="certificate-wrap">
-              <img src=".\assets\img\certification\deepLearning.jpeg" class="img-fluid"
-                alt="Getting Started with Deep Learning">
-              <div class="certificate-info">
-                <h6>Getting Started with Deep Learning</h6>
-                <div class="certificate-links">
-                  <a href="https://learn.nvidia.com/certificates?id=12QkntWtQdeaa46IBdCsRQ" target="_blank"
-                    class="certificate-link">
-                    <i class="bx bx-link">View Certificate</i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <div class="about-grid">
+          <article class="panel reveal">
+            <h3>Profile</h3>
+            <p>
+              I design backend systems and APIs for reliability, performance, and developer velocity. My work spans high-scale
+              messaging at Kaleyra, real-estate platform engineering at Tailon Labs, and OSS platform improvements at NCSU Expertiza.
+            </p>
+            <p>
+              I focus on measurable outcomes: better delivery rates, lower latency, stronger reliability, and maintainable codebases.
+            </p>
+          </article>
+          <article class="panel reveal">
+            <h3>Education</h3>
+            <ul class="clean-list">
+              <li>
+                <strong>North Carolina State University</strong><br>
+                M.S. Computer Science, Aug 2024 - May 2026, GPA: 4.00/4.00
+              </li>
+              <li>
+                <strong>R. N. S. Institute of Technology, India</strong><br>
+                B.E. Computer Science, Jul 2018 - Aug 2022, GPA: 9.02/10.00
+              </li>
+            </ul>
+          </article>
+          <article class="panel reveal">
+            <h3>Publication</h3>
+            <p>
+              Prerak Bhandari, Dr. E. F. Gehringer, "LLM Conversation Transcripts in Software Engineering: Redefining Homework in the Age of Generative AI."
+            </p>
+            <p>
+              2026 ASEE Annual Conference and Exhibition, Charlotte, NC.
+            </p>
+          </article>
         </div>
       </div>
-    </div>
+    </section>
 
-  </section>
-  <!-- End Education Section -->
-
-  <!-- Start Experience Section -->
-
-  <section id="experience" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Experience</h2>
+    <section class="section metrics" id="impact">
+      <div class="container metrics-grid">
+        <article class="metric reveal">
+          <h3><span class="count" data-count="150">0</span>+</h3>
+          <p>APIs migrated from PHP to Go</p>
+        </article>
+        <article class="metric reveal">
+          <h3><span class="count" data-count="15000">0</span></h3>
+          <p>Requests per second achieved</p>
+        </article>
+        <article class="metric reveal">
+          <h3><span class="count" data-count="99.9">0</span>%</h3>
+          <p>Messaging reliability in failover workflows</p>
+        </article>
+        <article class="metric reveal">
+          <h3><span class="count" data-count="5">0</span>M+</h3>
+          <p>End users reached through enterprise messaging</p>
+        </article>
       </div>
+    </section>
 
-      <div class="experience-section">
-        <div class="experience-item" data-aos="fade-up">
-          <h4 class="experience-title"><a href="https://www.ncsu.edu/" class="experience-link">North Carolina State University</a></h4>
-          <h5 class="experience-duration">January 2025 - Present</h5>
-          <h6 class="experience-location">Raleigh, North Carolina, USA</h6>
-          <p class="experience-role"><em>Graduate Teaching Assistant</em></p>
-          <ul class="experience-tasks">
-            <li>Assisted in grading assignments and exams to support students in their learning journey.</li>
-            <li>Collaborated with Professor Dr. Kimberly Titus to design and develop engaging Python-based projects.
-            </li>
-            <li>Provided guidance and mentorship to students to help them navigate the practical applications of Python.
-            </li>
-            <li>Contributed to fostering an interactive and supportive learning environment.</li>
-          </ul>
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Recent roles and outcomes</h2>
         </div>
 
-        <div class="experience-item" data-aos="fade-up">
-          <h4 class="experience-title"><a href="https://www.kaleyra.com/" class="experience-link">Kaleyra</a></h4>
-          <h5 class="experience-duration">July 2022 - July 2024</h5>
-          <h6 class="experience-location">Bangalore, Karnataka, India</h6>
-          <p class="experience-role"><em>Software Developer Professional</em></p>
-          <p>Responsible for handling multiple services and developing major new features for them:</p>
-          <ul class="experience-tasks">
-            <li>Developed and implemented a <b>URL Shortener service</b> with custom domains, enabling customers to
-              personalize short URLs and
-              access detailed analytics (e.g., total clicks, unique clicks, location, browser, and channel metrics),
-              resulting in a 25% increase in
-              user engagement and improved tracking efficiency.</li>
-            <li>Designed and integrated <b>WhatsApp</b> features by leveraging Meta’s Tech Provider and Account Sharing
-              APIs, introducing a shared
-              credit line feature and automating customer billing using Meta’s Graph API and conversational analytics,
-              reducing billing errors
-              by 15% and improving operational efficiency.</li>
-            <li>Scaled <b>SMS</b> campaigns to handle millions of messages per campaign, enhanced legacy APIs for Sender
-              ID
-              customization, template management, and message content, and integrated URL Shortening, increasing
-              campaign deliverability by 20%.</li>
-            <li>Engineered a <b>Failover system</b> combining SMS, WhatsApp, RCS, SOIP, Voice, and Email channels,
-              ensuring
-              99.9% message delivery reliability using Amazon SQS, reducing message delivery failures by 40%.</li>
-            <li><b>Architected</b> and <b>migrated</b> 30+ APIs from PHP to Go, <b>reducing latency</b> by 97.5% and
-              <b>scaling service</b> load
-              from 4k to 15k RPS by leveraging Go Routines for concurrency; transitioned services from a monolithic to a
-              microservice architecture, improving system performance and scalability by 3x.
-            </li>
-            <li><b>Resolved 100+ bugs</b> by rigorously evaluating and debugging REST APIs by unit testing and mocking
-              API
-              calls, improving service stability and reducing downtime by 30%.</li>
-            <li>Introduced <b>sharding and indexing scripts</b> for MongoDB, <b>optimizing</b> the database queries by
-              30% faster
-              retrievals.</li>
-            <li>Created a new product for Kaleyra – <b>MS Excel Kaleyra Addin</b>, which allows users to send SMS from
-              within
-              their Excel spreadsheet, increasing 20% usage of the SMS channel.</li>
-          </ul>
-        </div>
-
-        <div class="experience-item" data-aos="fade-up">
-          <h4 class="experience-title"><a href="https://www.kaleyra.com/" class="experience-link">Kaleyra</a></h4>
-          <h5 class="experience-duration">April 2022 - June 2022</h5>
-          <h6 class="experience-location">Bangalore, Karnataka, India</h6>
-          <p class="experience-role"><em>Software Developer Intern</em></p>
-          <ul class="experience-tasks">
-            <li>Completed Proof-of-Concept for Rich Communication Service(RCS).</li>
-            <li>Designed architecture diagram and documentations for Failover service.</li>
-            <li>Integrated RCS as a new channel in Failover system.</li>
-            <li>Created e-commerce websites using MERN stack.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- End Experience Section -->
-
-
-  <!-- Start Projects Section -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Projects</h2>
-      </div>
-
-
-      <div class="col-lg-12 col-md-12 portfolio-item filter-app">
-        <center>
-          <h4>Document Querying</h4>
-        </center>
-        <div class="portfolio-wrap">
-          <img src="assets/img/projects/Querying.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-
-            <div class="portfolio-links">
-              <a href="projects_details/DocQuerying.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Graduate Student Developer - OSS (Expertiza)</h3>
+              <p>North Carolina State University | Raleigh, NC</p>
+              <span>January 2026 - Present</span>
             </div>
-          </div>
-        </div>
-      </div>
+            <ul>
+              <li>Engineered backend features in Ruby on Rails and TypeScript for scalable peer review and rubric-based grading workflows.</li>
+              <li>Refactored legacy grading models into reusable hierarchies, reducing code duplication by 30%.</li>
+              <li>Improved submission response APIs for better workflow reliability and backend testability.</li>
+            </ul>
+          </article>
 
-      <div class="col-lg-12 col-md-12 portfolio-item filter-app">
-        <center>
-          <h4>Attendance Management</h4>
-        </center>
-        <div class="portfolio-wrap">
-          <img src=".\assets\img\projects\Attendance3.png" class="img-fluid" alt="">
-          <div class="portfolio-info">
-
-            <div class="portfolio-links">
-              <a href=".\projects_details\attendance_management_project3.html" data-gall="portfolioDetailsGallery"
-                data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Software Engineer Intern</h3>
+              <p>Tailon Labs | Remote, USA</p>
+              <span>May 2025 - August 2025</span>
             </div>
-          </div>
-        </div>
-      </div>
+            <ul>
+              <li>Built a full-stack Real Estate Management platform using React.js, Node.js, TypeScript, and PostgreSQL.</li>
+              <li>Improved realtor operational efficiency by 35% through scalable listing and workflow management.</li>
+              <li>Optimized API architecture with async I/O, connection pooling, and Redis caching, increasing throughput by 3x.</li>
+              <li>Reduced p95 latency from 280 ms to 85 ms under load.</li>
+            </ul>
+          </article>
 
-      <div class="col-lg-12 col-md-12 portfolio-item filter-app">
-        <center>
-          <h4>Diesease Prediction</h4>
-        </center>
-        <div class="portfolio-wrap">
-          <img src=".\assets\img\projects\DieseasePred.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <div class="portfolio-links">
-              <a href="projects_details/MultiDiseasePred.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+          <article class="timeline-item reveal">
+            <div class="timeline-meta">
+              <h3>Software Engineer</h3>
+              <p>Kaleyra Inc. | Bangalore, India</p>
+              <span>April 2022 - July 2024</span>
             </div>
-          </div>
+            <ul>
+              <li>Scaled SMS pipelines for millions of messages and revamped Sender ID, template, and content APIs.</li>
+              <li>Built multi-channel failover across SMS, WhatsApp, RCS, Voice, and Email with AWS SQS routing for 99.9% reliability.</li>
+              <li>Implemented WhatsApp integrations using Meta Graph API and automated billing to eliminate billing errors.</li>
+              <li>Led custom domain routing and analytics tracking for URL shortener features used by 5M+ users.</li>
+              <li>Migrated 150+ APIs from PHP to Go with gRPC, cutting latency by 97.5% and scaling from 4,000 to 15,000 RPS.</li>
+              <li>Shipped campaign tooling, including an Excel SMS Add-in, improving workflow efficiency by 25%.</li>
+            </ul>
+          </article>
         </div>
       </div>
+    </section>
 
-      <!-- Project 1: Cats vs Dogs Classifier -->
-      <div class="col-lg-12 col-md-12 portfolio-item filter-app">
-        <center>
-          <h4>Mentify</h4>
-        </center>
-        <div class="portfolio-wrap">
-          <img src=".\assets\img\projects\mentify.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-            <div class="portfolio-links">
-              <a href="projects_details/Mentify_project1.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe"
-                class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Production-oriented and AI-focused builds</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <h3>Sword URL Shortener</h3>
+              <a href="https://swrd.shop" target="_blank" rel="noreferrer">swrd.shop</a>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 2: Rock Paper Scissors -->
-      <div class="col-lg-12 col-md-12 portfolio-item filter-app">
-        <center>
-          <h4>Image Encryption</h4>
-        </center>
-        <div class="portfolio-wrap">
-          <img src=".\assets\img\projects\imageEncryption.jpg" class="img-fluid" alt="">
-          <div class="portfolio-info">
-
-            <div class="portfolio-links">
-              <a href=".\projects_details\imageEncryption&Decryption_project2.html" data-gall="portfolioDetailsGallery"
-                data-vbtype="iframe" class="venobox" title="Project Details">
-                <i class="bx bx-info-circle"> </i></a>
+            <p>
+              Built a production-grade URL Shortener with Java (Spring Boot), PostgreSQL, and React.js, designed for 99.9% uptime
+              and sustained traffic above 1000 RPS.
+            </p>
+            <ul>
+              <li>JWT-based authentication and role-aware access control.</li>
+              <li>Real-time analytics and RabbitMQ background processing.</li>
+              <li>CI/CD with automated tests, Docker images, and AWS EC2 deployment via Ansible.</li>
+            </ul>
+            <div class="tags">
+              <span>Spring Boot</span><span>React</span><span>RabbitMQ</span><span>AWS</span><span>Ansible</span>
             </div>
-          </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <h3>Smart Inventory AI Bot</h3>
+              <a href="https://github.com/bhandariprerak" target="_blank" rel="noreferrer">Source Code</a>
+            </div>
+            <p>
+              Built a cross-platform mobile app with React Native, FastAPI, and Google Gemini AI to answer inventory and pricing
+              questions from Google Drive CSV sources in real time.
+            </p>
+            <ul>
+              <li>Structured query analysis pipeline for faster conversational answers.</li>
+              <li>Cut query-to-answer latency by 40%.</li>
+              <li>Added Drive API integrations and cached 5000+ records using pandas DataFrames.</li>
+            </ul>
+            <div class="tags">
+              <span>React Native</span><span>FastAPI</span><span>Gemini AI</span><span>Google Drive API</span>
+            </div>
+          </article>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
-  <!-- End Projects Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Core technologies</h2>
+        </div>
 
-  <!-- Start Skills Section -->
-  <section id="skill-set" class="skills-section">
-    <div class="container">
-      <div class="section">
-        <h2>Programming Languages</h2>
-        <div class="skills-grid">
-          <a href="https://www.python.org/" class="skill-item">
-            <img src="./assets/img/skills/python.png" alt="Python">
+        <div class="skills-layout">
+          <article class="skill-panel reveal">
+            <h3>Languages</h3>
+            <div class="chip-wrap">
+              <span>Go</span><span>Python</span><span>Java</span><span>C</span><span>JavaScript</span><span>TypeScript</span><span>Ruby</span><span>SQL</span><span>HTML</span><span>CSS</span><span>PHP</span>
+            </div>
+          </article>
+          <article class="skill-panel reveal">
+            <h3>Frameworks</h3>
+            <div class="chip-wrap">
+              <span>Spring Boot</span><span>React.js</span><span>Node.js</span><span>Django</span><span>Flask</span><span>FastAPI</span><span>Ruby on Rails</span>
+            </div>
+          </article>
+          <article class="skill-panel reveal">
+            <h3>Databases</h3>
+            <div class="chip-wrap">
+              <span>MongoDB</span><span>MySQL</span><span>PostgreSQL</span><span>Redis</span><span>Elasticsearch</span><span>DynamoDB</span>
+            </div>
+          </article>
+          <article class="skill-panel reveal">
+            <h3>Cloud and Tools</h3>
+            <div class="chip-wrap">
+              <span>AWS</span><span>Azure</span><span>Docker</span><span>Kubernetes</span><span>Ansible</span><span>Git</span><span>RabbitMQ</span><span>Jira</span><span>Jenkins</span><span>EKS</span><span>S3</span><span>EC2</span><span>Lambda</span><span>ELB</span><span>SQS</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Certifications</p>
+          <h2>Continuous learning and specialization</h2>
+        </div>
+
+        <div class="cert-grid">
+          <a class="cert-card reveal" href="https://www.coursera.org/account/accomplishments/specialization/certificate/KWLN65FWNXG9" target="_blank" rel="noreferrer">
+            <img src="assets/img/certification/PythonSpecialization.jpeg" alt="Python Specialization certificate">
+            <span>Python Specialization</span>
           </a>
-          <a href="https://golang.org/" class="skill-item">
-            <img src="./assets/img/skills/Go.png" alt="Go">
+          <a class="cert-card reveal" href="https://coursera.org/verify/ZAHYV2JMLU6K" target="_blank" rel="noreferrer">
+            <img src="assets/img/certification/aws-fundamentals-addressing-security-risk.jpeg" alt="AWS security risk certificate">
+            <span>AWS Addressing Security Risk</span>
           </a>
-          <a href="https://www.php.net/" class="skill-item">
-            <img src="./assets/img/skills/PHP.png" alt="PHP">
+          <a class="cert-card reveal" href="https://coursera.org/verify/T4FQHA3N3H6H" target="_blank" rel="noreferrer">
+            <img src="assets/img/certification/awsCTE.jpeg" alt="AWS technical essentials certificate">
+            <span>AWS Cloud Technical Essentials</span>
           </a>
-          <a href="https://www.w3schools.com/c/" class="skill-item">
-            <img src="./assets/img/skills/C.png" alt="C">
+          <a class="cert-card reveal" href="https://coursera.org/verify/67QS3E6XFL9D" target="_blank" rel="noreferrer">
+            <img src="assets/img/certification/awsS3.jpeg" alt="AWS S3 certificate">
+            <span>AWS S3</span>
           </a>
-          <a href="https://www.java.com/en/" class="skill-item">
-            <img src="./assets/img/skills/Java.png" alt="Java">
+          <a class="cert-card reveal" href="https://coursera.org/verify/SXAZ2N5MF9FJ" target="_blank" rel="noreferrer">
+            <img src="assets/img/certification/go.jpeg" alt="Getting started with Go certificate">
+            <span>Getting Started with Go</span>
           </a>
-          <a href="https://www.rust-lang.org/" class="skill-item">
-            <img src="./assets/img/skills/Rust.png" alt="Rust">
+          <a class="cert-card reveal" href="https://coursera.org/verify/P6HEH25TYT5S" target="_blank" rel="noreferrer">
+            <img src="assets/img/certification/dsa.jpeg" alt="Data structures certificate">
+            <span>Data Structures</span>
           </a>
-          <a href="https://www.ruby-lang.org/en/" class="skill-item">
-            <img src="./assets/img/skills/Ruby.png" alt="Ruby">
+          <a class="cert-card reveal" href="https://coursera.org/verify/9DG8TA4BX88U" target="_blank" rel="noreferrer">
+            <img src="assets/img/certification/ood.jpeg" alt="Object oriented Java certificate">
+            <span>Object Oriented Programming in Java</span>
+          </a>
+          <a class="cert-card reveal" href="https://coursera.org/verify/Y5ENNX2TCR5L" target="_blank" rel="noreferrer">
+            <img src="assets/img/certification/htmlCssJs.jpeg" alt="HTML CSS JavaScript certificate">
+            <span>Programming Foundations with JavaScript, HTML and CSS</span>
+          </a>
+          <a class="cert-card reveal" href="https://coursera.org/verify/PYPQ8O0276B5" target="_blank" rel="noreferrer">
+            <img src="assets/img/certification/rust.jpeg" alt="Rust fundamentals certificate">
+            <span>Rust Fundamentals</span>
+          </a>
+          <a class="cert-card reveal" href="https://learn.nvidia.com/certificates?id=12QkntWtQdeaa46IBdCsRQ" target="_blank" rel="noreferrer">
+            <img src="assets/img/certification/deepLearning.jpeg" alt="Deep learning certificate">
+            <span>Getting Started with Deep Learning</span>
           </a>
         </div>
       </div>
+    </section>
 
-      <div class="section">
-        <h2>Operating Systems</h2>
-        <div class="skills-grid">
-          <a href="https://www.kernel.org/" class="skill-item">
-            <img src="./assets/img/skills/Linux.png" alt="Linux">
-          </a>
-          <a href="https://www.microsoft.com/en-us/windows" class="skill-item">
-            <img src="./assets/img/skills/Windows.webp" alt="Windows">
-          </a>
-          <a href="https://ubuntu.com/" class="skill-item">
-            <img src="./assets/img/skills/Ubuntu.png" alt="Ubuntu">
-          </a>
-          <a href="https://www.apple.com/macos/" class="skill-item">
-            <img src="./assets/img/skills/mac.png" alt="Mac">
-          </a>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Web Development & Databases</h2>
-        <div class="skills-grid">
-          <a href="https://www.w3schools.com/html/" class="skill-item">
-            <img src="./assets/img/skills/Html.png" alt="HTML">
-          </a>
-          <a href="https://www.w3schools.com/css/" class="skill-item">
-            <img src="./assets/img/skills/Css.png" alt="CSS">
-          </a>
-          <a href="https://www.w3schools.com/js/" class="skill-item">
-            <img src="./assets/img/skills/javascript.png" alt="JavaScript">
-          </a>
-          <a href="https://www.w3schools.com/python/" class="skill-item">
-            <img src="./assets/img/skills/Tkinter.png" alt="Tkinter">
-          </a>
-          <a href="https://nodejs.org/" class="skill-item">
-            <img src="./assets/img/skills/NodeJs.png" alt="Node.js">
-          </a>
-          <a href="https://www.mysql.com/" class="skill-item">
-            <img src="./assets/img/skills/MySql.svg" alt="MySQL">
-          </a>
-          <a href="https://www.mongodb.com/" class="skill-item">
-            <img src="./assets/img/skills/mongodb.svg" alt="MongoDB">
-          </a>
-          <a href="https://redis.io/" class="skill-item">
-            <img src="./assets/img/skills/Redis.png" alt="Redis">
-          </a>
-          <a href="https://www.elastic.co/elasticsearch/" class="skill-item">
-            <img src="./assets/img/skills/Elasticsearch.png" alt="Elasticsearch">
-          </a>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Applications, Tools, and Frameworks</h2>
-        <div class="skills-grid">
-          <a href="https://git-scm.com/" class="skill-item">
-            <img src="./assets/img/skills/Git.png" alt="Git">
-          </a>
-          <a href="https://github.com/" class="skill-item">
-            <img src="./assets/img/skills/github.png" alt="GitHub">
-          </a>
-          <a href="https://postman.com/" class="skill-item">
-            <img src="./assets/img/skills/Postman.png" alt="Postman">
-          </a>
-          <a href="https://www.jenkins.io/" class="skill-item">
-            <img src="./assets/img/skills/Jenkins.png" alt="Jenkins">
-          </a>
-          <a href="https://kubernetes.io/" class="skill-item">
-            <img src="./assets/img/skills/Kubernetes.png" alt="Kubernetes">
-          </a>
-          <a href="https://www.docker.com/" class="skill-item">
-            <img src="./assets/img/skills/Docker.png" alt="Docker">
-          </a>
-          <a href="https://www.rabbitmq.com/" class="skill-item">
-            <img src="./assets/img/skills/RabbitMQ.png" alt="RabbitMQ">
-          </a>
-          <a href="https://aws.amazon.com/sqs/" class="skill-item">
-            <img src="./assets/img/skills/AmazonSQS.png" alt="Amazon SQS">
-          </a>
-          <a href="https://visualstudio.microsoft.com/" class="skill-item">
-            <img src="./assets/img/skills/VisualStudio.png" alt="Visual Studio">
-          </a>
-          <a href="https://www.atlassian.com/software/jira" class="skill-item">
-            <img src="./assets/img/skills/Jira.png" alt="Jira">
-          </a>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Cloud Platforms</h2>
-        <div class="skills-grid">
-          <a href="https://aws.amazon.com/" class="skill-item">
-            <img src="./assets/img/skills/AWS.png" alt="AWS">
-          </a>
-          <a href="https://cloud.google.com/" class="skill-item">
-            <img src="./assets/img/skills/GoogleCloud.png" alt="Google Cloud">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End skills section -->
-
-  <!-- Start Contact Section -->
-
-  <section id="contacts" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="row mt-2">
-
-        <!-- Contact - Social Profiles -->
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/prerak-bhandari/" target="_blank" class="linkedin"><i
-                  class="bx bxl-linkedin"></i></a>
-              <a href="https://github.com/bhandariprerak" target="_blank" class="github"><i
-                  class="bx bxl-github"></i></a>
-
-            </div>
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let&apos;s build something meaningful.</h2>
+            <p>Open to software engineering opportunities where performance, reliability, and product impact matter.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:pbhanda4@ncsu.edu">pbhanda4@ncsu.edu</a>
+            <a href="tel:+19194204824">+1 (919) 420-4824</a>
+            <a href="https://www.linkedin.com/in/prerak-bhandari/" target="_blank" rel="noreferrer">linkedin.com/in/prerak-bhandari</a>
+            <a href="https://github.com/bhandariprerak" target="_blank" rel="noreferrer">github.com/bhandariprerak</a>
           </div>
         </div>
-
-        <!-- Contact - Email -->
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email</h3>
-            <div class="email-links">
-              <a href="mailto:pbhanda4@ncsu.edu" target="_blank" class="google email-link">pbhanda4@ncsu.edu<i
-                  class="bx bxl-google"></i></a>
-              <a href="mailto:bhandariprerak@gmail.com" target="_blank"
-                class="google email-link">bhandariprerak@gmail.com<i class="bx bxl-google"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact - Mobile -->
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Mobile</h3>
-            <p>+1(919)420-4824</p>
-          </div>
-        </div>
-
-
-
-        <!-- In other profiles section one can add Stackoverflow profile etc. -->
-        <!-- <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Other Profiles</h3>
-            <div class="social-links">
-              <a href="https://studentambassadors.microsoft.com/en-US/profile/49557" target="_blank" class="google"><i class="bx bxl-microsoft"></i></a>
-              <a href="https://awscommunity.pk/" target="_blank" class="amazon_aws"><i class="bx bxl-amazon"></i></a>
-            </div>
-          </div>
-        </div> -->
-
       </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Prerak Bhandari</p>
+  </footer>
 
-  <!-- Import JS: Particles Theme -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing', {
-      strings: ["an Engineer", "a Problem Solver", "a Software Developer", ""],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65
-    });
-  </script>
-
-  <!-- Main JS File for the Website-->
   <script src="assets/js/index.js"></script>
-
-
-
 </body>
-
 </html>
