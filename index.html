@@ -189,14 +189,43 @@
       <div class="container">
         <div class="section-heading reveal">
           <p class="eyebrow">Projects</p>
-          <h2>Production-oriented and AI-focused builds</h2>
+          <h2>Production-oriented, AI-focused, and data-driven builds</h2>
         </div>
 
         <div class="project-grid">
           <article class="project-card reveal">
             <div class="project-top">
-              <h3>Sword URL Shortener</h3>
-              <a href="https://swrd.shop" target="_blank" rel="noreferrer">swrd.shop</a>
+              <div>
+                <h3>Great Clips Coupon Finder</h3>
+                <p class="project-kicker">Live scraping, text parsing, and searchable local coupon discovery</p>
+              </div>
+              <div class="project-links">
+                <a href="https://greatclips-coupon-finder.onrender.com/" target="_blank" rel="noreferrer">Live App</a>
+                <a href="https://github.com/bhandariprerak/great-clips-coupons-finder" target="_blank" rel="noreferrer">Source Code</a>
+              </div>
+            </div>
+            <p>
+              Built a zero-dependency Python web app that live-scrapes public Great Clips coupon sources, follows final
+              offer links, and makes deals searchable by city, state, or address fragment.
+            </p>
+            <ul>
+              <li>Parallelized multi-hop scraping with ThreadPoolExecutor, 15-minute in-memory caching, and graceful handling of flaky upstream pages.</li>
+              <li>Parsed semi-structured offer terms into searchable location metadata and exposed both a polished HTML UI and a JSON API.</li>
+              <li>Deployed on Render with a standard-library-only stack, avoiding Flask, React, databases, and third-party scraping frameworks.</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span><span>http.server</span><span>urllib</span><span>Concurrency</span><span>Web Scraping</span><span>Render</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <div>
+                <h3>Sword URL Shortener</h3>
+              </div>
+              <div class="project-links">
+                <a href="https://swrd.shop" target="_blank" rel="noreferrer">Live App</a>
+              </div>
             </div>
             <p>
               Built a production-grade URL Shortener with Java (Spring Boot), PostgreSQL, and React.js, designed for 99.9% uptime
@@ -214,8 +243,12 @@
 
           <article class="project-card reveal">
             <div class="project-top">
-              <h3>Smart Inventory AI Bot</h3>
-              <a href="https://github.com/bhandariprerak/Smart-Inventory-Bot" target="_blank" rel="noreferrer">Source Code</a>
+              <div>
+                <h3>Smart Inventory AI Bot</h3>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/bhandariprerak/Smart-Inventory-Bot" target="_blank" rel="noreferrer">Source Code</a>
+              </div>
             </div>
             <p>
               Built a cross-platform mobile app with React Native, FastAPI, and Google Gemini AI to answer inventory and pricing

@@ -407,7 +407,7 @@ h4 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
 }
 
@@ -419,7 +419,8 @@ h4 {
 .project-top {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
+  flex-wrap: wrap;
   gap: 0.8rem;
 }
 
@@ -427,10 +428,26 @@ h4 {
   margin-bottom: 0.35rem;
 }
 
-.project-top a {
+.project-kicker {
+  margin: 0;
+  font-size: 0.92rem;
+  color: #8fc2dc;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.project-links a {
   color: #8edfd9;
   font-size: 0.93rem;
   white-space: nowrap;
+  border: 1px solid rgba(142, 223, 217, 0.28);
+  border-radius: 999px;
+  padding: 0.38rem 0.72rem;
+  background: rgba(7, 32, 48, 0.55);
 }
 
 .project-card ul {
